@@ -31,22 +31,32 @@
     ul { padding-left: 1.25rem; }
     hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
     @media (prefers-color-scheme: dark) { hr { border-color: #444; } }
+    nav { margin-bottom: 1.5rem; font-size: 0.95rem; }
+    nav a { margin-right: 1rem; }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html"><strong>Privacy Policy</strong></a>
+    <a href="about.html">About</a>
+  </nav>
+
   <h1>TaskNest Privacy Policy</h1>
   <p class="meta"><strong>今办</strong> · Package: <code>com.tasknest.app</code><br>
-  Last updated: July 3, 2026</p>
+  Last updated: July 8, 2026</p>
 
   <h2>Overview</h2>
-  <p>TaskNest is a lightweight to-do app. Your data is stored <strong>locally on your device</strong>. We do not require an account and do not use your task data for advertising.</p>
+  <p>TaskNest is a lightweight to-do app. Your data is stored <strong>locally on your device</strong>. We do not require an account and do not use your task content for ad targeting.</p>
 
   <h2>Data we store locally</h2>
   <ul>
     <li>Task titles, notes, priority levels, due dates, and reminders</li>
     <li>App settings (theme, language, reminder toggle)</li>
   </ul>
-  <p>All of the above is kept in a local SQLite database on your device.</p>
+  <p>All of the above is kept in a local SQLite database on your device. There is <strong>no limit</strong> on active (incomplete) tasks.</p>
+
+  <h2>Backup export</h2>
+  <p>When you tap <strong>Export JSON</strong> in Settings, TaskNest writes a backup file to the system <strong>Downloads</strong> folder on Android (e.g. <code>tasknest_export_YYYYMMDD_HHMMSS.json</code>). You may delete these files in your file manager. Import lets you pick a JSON file from your device (merge or replace).</p>
 
   <h2>Data we do not collect (by TaskNest)</h2>
   <ul>
@@ -67,7 +77,8 @@
   <p>Audio is processed by the respective provider under their privacy policies. TaskNest does not operate a backend to store voice recordings.</p>
 
   <h2>Advertising</h2>
-  <p>Today and Plan tabs may display a <strong>Google AdMob</strong> banner at the bottom. Ads are served by Google and may use your device's advertising identifier for personalized or non-personalized ads. You can limit ad tracking in your device settings.</p>
+  <p>Today and Plan tabs display a <strong>Google AdMob</strong> banner at the bottom. Ads are served by <strong>Google LLC</strong> via AdMob and may use your device's advertising identifier for personalized or non-personalized ads. <strong>We do not use your task titles, notes, or other task content for ad targeting.</strong></p>
+  <p>You can limit ad tracking in Android system settings. See <a href="https://policies.google.com/technologies/ads">Google's ads policy</a>.</p>
   <p>Done and Settings tabs do not show ads.</p>
 
   <h2>Permissions</h2>
@@ -78,7 +89,7 @@
       <tr><td>Notifications</td><td>Task reminders</td></tr>
       <tr><td>Internet</td><td>Baidu speech (mainland China Android), ad loading</td></tr>
       <tr><td>Advertising ID</td><td>Google AdMob may collect device ad identifiers</td></tr>
-      <tr><td>Storage / files</td><td>JSON backup import and export</td></tr>
+      <tr><td>Storage / files</td><td>Export JSON to Downloads, import backup files from device</td></tr>
     </tbody>
   </table>
 
