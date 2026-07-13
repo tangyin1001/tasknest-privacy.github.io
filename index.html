@@ -31,32 +31,24 @@
     ul { padding-left: 1.25rem; }
     hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
     @media (prefers-color-scheme: dark) { hr { border-color: #444; } }
-    nav { margin-bottom: 1.5rem; font-size: 0.95rem; }
-    nav a { margin-right: 1rem; }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html"><strong>Privacy Policy</strong></a>
-    <a href="about.html">About</a>
-  </nav>
-
   <h1>TaskNest Privacy Policy</h1>
-  <p class="meta"><strong>今办</strong> · Package: <code>com.aibang.jinban</code><br>
-  Last updated: July 8, 2026</p>
+  <p class="meta">
+    <strong>今办 TaskNest</strong><br>
+    Last updated: July 13, 2026
+  </p>
 
   <h2>Overview</h2>
-  <p>TaskNest is a lightweight to-do app. Your data is stored <strong>locally on your device</strong>. We do not require an account and do not use your task content for ad targeting.</p>
+  <p>TaskNest stores data <strong>locally on your device</strong>. We do not require an account and do not use your task content for ad targeting.</p>
 
-  <h2>Data we store locally</h2>
-  <ul>
-    <li>Task titles, notes, priority levels, due dates, and reminders</li>
-    <li>App settings (theme, language, reminder toggle)</li>
-  </ul>
-  <p>All of the above is kept in a local SQLite database on your device. There is <strong>no limit</strong> on active (incomplete) tasks.</p>
+  <h2>Local storage</h2>
+  <p>Task titles, notes, priority, due dates, and reminders are stored in a local SQLite database on your device. App settings (theme, language, reminder toggle) are also kept on device. Data does not leave the device unless you export a JSON backup.</p>
+  <p>On Android, when you tap <strong>Export JSON</strong> in Settings, TaskNest writes a backup file to the system <strong>Downloads</strong> folder (e.g. <code>tasknest_export_YYYYMMDD_HHMMSS.json</code>). You may delete these files in your file manager at any time. Import lets you pick a JSON file from your device (merge or replace). There is <strong>no limit</strong> on active (incomplete) tasks.</p>
 
-  <h2>Backup export</h2>
-  <p>When you tap <strong>Export JSON</strong> in Settings, TaskNest writes a backup file to the system <strong>Downloads</strong> folder on Android (e.g. <code>tasknest_export_YYYYMMDD_HHMMSS.json</code>). You may delete these files in your file manager. Import lets you pick a JSON file from your device (merge or replace).</p>
+  <h2>Your rights</h2>
+  <p>You can edit or delete tasks anytime, or export/import JSON backups. Uninstalling the app removes all tasks and settings from your device. We do not keep a cloud copy for you.</p>
 
   <h2>Data we do not collect (by TaskNest)</h2>
   <ul>
@@ -65,11 +57,12 @@
   </ul>
 
   <h2>Voice input</h2>
-  <p>Voice controls appear in the task form <strong>only when speech is available on your device</strong>. When you use voice input, microphone access is requested.</p>
+  <p>Voice controls appear in the task form <strong>only when speech is available on your device</strong>. Microphone access is requested when you use voice input.</p>
+  <p><strong>How to use:</strong> tap the mic to start; the session auto-stops about 3 seconds after you stop speaking, or tap again to stop early. The on-screen text while speaking is a live preview and may be incomplete; the final result is applied when the session ends. Each voice input is one recognition session (one Baidu API call on mainland China Android).</p>
   <table>
     <thead><tr><th>Region</th><th>Service</th></tr></thead>
     <tbody>
-      <tr><td>Mainland China (Android)</td><td>Baidu Speech — always used (network required)</td></tr>
+      <tr><td>Mainland China (Android)</td><td>Baidu Speech — always used (network required; billed per session)</td></tr>
       <tr><td>Other Android regions</td><td>System speech recognition (language packs may be required)</td></tr>
       <tr><td>iOS</td><td>System speech recognition</td></tr>
     </tbody>
@@ -77,8 +70,8 @@
   <p>Audio is processed by the respective provider under their privacy policies. TaskNest does not operate a backend to store voice recordings.</p>
 
   <h2>Advertising</h2>
-  <p>Today and Plan tabs display a <strong>Google AdMob</strong> banner at the bottom. Ads are served by <strong>Google LLC</strong> via AdMob and may use your device's advertising identifier for personalized or non-personalized ads. <strong>We do not use your task titles, notes, or other task content for ad targeting.</strong></p>
-  <p>You can limit ad tracking in Android system settings. See <a href="https://policies.google.com/technologies/ads">Google's ads policy</a>.</p>
+  <p>Today and Plan tabs may show a <strong>Google AdMob</strong> banner. Ads may use your device's advertising identifier (Advertising ID) for personalized or non-personalized ads. <strong>We do not use your task titles, notes, or other task content for ad targeting.</strong></p>
+  <p>Manage ad preferences in Android system settings, or read <a href="https://policies.google.com/technologies/ads">Google's ads policy</a>.</p>
   <p>Done and Settings tabs do not show ads.</p>
 
   <h2>Permissions</h2>
@@ -97,20 +90,20 @@
   <ul>
     <li><strong>Baidu AI Cloud</strong> — speech recognition on mainland China Android only: <a href="https://ai.baidu.com">https://ai.baidu.com</a></li>
     <li><strong>Google AdMob</strong> — advertising: <a href="https://admob.google.com">https://admob.google.com</a></li>
-    <li><strong>Google</strong> — speech recognition on overseas Android (via OS)</li>
-    <li><strong>Apple</strong> — speech recognition on iOS (via OS)</li>
+    <li><strong>Google</strong> — speech recognition on overseas Android (via system)</li>
+    <li><strong>Apple</strong> — speech recognition on iOS (via system)</li>
   </ul>
 
   <h2>Children</h2>
   <p>TaskNest is not directed at children under 13. We do not knowingly collect personal information from children.</p>
 
   <h2>Changes</h2>
-  <p>We may update this policy. The in-app privacy policy and this page will reflect the latest version.</p>
+  <p>We may update this policy from time to time. The in-app privacy policy reflects the latest version. Continued use means you accept the updated policy.</p>
 
   <h2>Contact</h2>
-  <p>For privacy questions, contact the developer through the Google Play store listing.</p>
+  <p>For privacy questions, contact the developer via the Google Play store listing.</p>
 
   <hr>
-  <p class="meta">TaskNest (今办) · <code>com.aibang.jinban</code></p>
+  <p class="meta">TaskNest (今办)</p>
 </body>
 </html>
