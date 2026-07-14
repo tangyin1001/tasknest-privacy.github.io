@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今办隐私政策</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei",
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px 48px;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #121212; }
+      a { color: #8ab4f8; }
+      th, td { border-color: #444; }
+      th { background: #2a2a2a !important; }
+      .meta { color: #aaa !important; }
+      hr { border-color: #444 !important; }
+      .note { background: #1e2a1e !important; border-color: #3d5a3d !important; }
+    }
+    h1 { font-size: 1.65rem; margin-bottom: 0.35rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.85rem; }
+    h3 { font-size: 1.05rem; margin-top: 1.25rem; }
+    .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.25rem; }
+    .note {
+      background: #f4faf4;
+      border: 1px solid #c8e6c9;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 0.92rem;
+      margin: 1rem 0 1.5rem;
+    }
+    table { border-collapse: collapse; width: 100%; font-size: 0.92rem; margin: 0.75rem 0; }
+    th, td { border: 1px solid #ccc; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    ul { padding-left: 1.25rem; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
+    code { font-size: 0.9em; }
+  </style>
+</head>
+<body>
+  <h1>今办隐私政策</h1>
+  <p class="meta">
+    <strong>今办（TaskNest）</strong><br>
+    包名：com.aibang.jinban<br>
+    运营者：北京爱帮科技有限公司<br>
+    最后更新：2026年7月14日
+  </p>
+
+  <div class="note">
+    本政策适用于通过<strong>中国大陆应用商店</strong>（如小米应用商店等）分发的今办客户端。
+  </div>
+
+  <h2>引言</h2>
+  <p>今办重视您的隐私。使用本应用即表示您已阅读并理解本政策。核心原则包括：</p>
+  <ul>
+    <li>无需注册登录即可使用；</li>
+    <li>任务内容默认仅保存在您的设备本地；</li>
+    <li>不会将您的任务标题、备注等用于广告定向；</li>
+    <li>涉及联网能力（语音识别、广告）时会通过权限或本政策向您说明。</li>
+  </ul>
+  <p>首次启动时，应用将展示隐私说明；您同意后方可继续使用。不同意可退出应用。</p>
+
+  <h2>一、我们如何收集与使用信息</h2>
+
+  <h3>1.1 本机存储的信息</h3>
+  <p>为实现待办功能，应用在设备本地保存任务标题、备注、优先级、截止日期、提醒、完成状态，以及主题、语言、提醒开关、隐私同意标记等设置。数据保存在本机 SQLite 与系统偏好存储中。</p>
+  <p><strong>我们不设自有业务云端同步您的任务内容</strong>；除非您主动导出备份，任务正文默认不离开本机。</p>
+
+  <h3>1.2 您主动导出的信息</h3>
+  <p>使用「导出 JSON」时，备份写入 Android「下载」文件夹（如 <code>tasknest_export_时间戳.json</code>），由您自行保管与删除。卸载应用不会自动删除已导出文件。</p>
+
+  <h3>1.3 特定功能场景</h3>
+  <table>
+    <thead>
+      <tr><th>场景</th><th>可能涉及</th><th>说明</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>语音输入</td>
+        <td>麦克风；语音音频</td>
+        <td>经百度等第三方识别；我们不另建服务器长期存储语音原文</td>
+      </tr>
+      <tr>
+        <td>任务提醒</td>
+        <td>通知；闹钟相关权限（视系统）</td>
+        <td>仅本地调度与展示</td>
+      </tr>
+      <tr>
+        <td>横幅广告</td>
+        <td>网络；设备与广告相关标识</td>
+        <td>由穿山甲 SDK 处理；见下文第三方说明</td>
+      </tr>
+      <tr>
+        <td>导入备份</td>
+        <td>您选择的本地文件</td>
+        <td>仅用于恢复任务</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>1.4 我们不主动收集</h3>
+  <ul>
+    <li>不强制账号、手机号登录；</li>
+    <li>不以任务内容做广告定向。</li>
+  </ul>
+
+  <h2>二、第三方服务（国内版）</h2>
+
+  <h3>2.1 百度智能云（语音）</h3>
+  <p>用于中国大陆 Android 语音输入（需联网，仅在您主动使用并授权麦克风时）。详见：<a href="https://ai.baidu.com" rel="noopener">https://ai.baidu.com</a></p>
+
+  <h3>2.2 穿山甲 / 巨量引擎（广告）</h3>
+  <p>「今日」「计划」页底部可能展示横幅广告；「完成」「设置」无广告。广告 SDK 可能处理设备信息、网络信息、广告标识符等。我们不会将任务标题、备注提供给广告方做内容定向。详见：<a href="https://www.csjplatform.com" rel="noopener">https://www.csjplatform.com</a></p>
+
+  <h2>三、设备权限</h2>
+  <table>
+    <thead>
+      <tr><th>权限</th><th>用途</th><th>可否关闭</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>网络</td><td>语音、广告</td><td>可；关闭后语音/广告可能不可用，本地待办仍可用</td></tr>
+      <tr><td>麦克风</td><td>语音输入</td><td>可；拒绝后仅手动输入</td></tr>
+      <tr><td>通知</td><td>任务提醒</td><td>可</td></tr>
+      <tr><td>闹钟与提醒（视系统）</td><td>提高提醒准时性</td><td>可在系统中管理</td></tr>
+      <tr><td>存储/文件（导入导出时）</td><td>备份读写</td><td>仅使用导入导出时需要</td></tr>
+    </tbody>
+  </table>
+
+  <h2>四、存储地点与期限</h2>
+  <ul>
+    <li>任务与设置：设备本地，期限由您决定（编辑、删除或卸载）。</li>
+    <li>导出备份：下载目录，由您自行管理。</li>
+    <li>第三方：语音、广告数据依其各自政策处理。</li>
+  </ul>
+  <p>卸载今办将删除应用私有数据，不删除您已导出到「下载」的备份。</p>
+
+  <h2>五、信息安全</h2>
+  <p>我们采取合理措施保护本地数据安全。请妥善保管设备与备份文件。因您自身原因导致的泄露或丢失，我们在法律允许范围内减轻或免除相应责任。</p>
+
+  <h2>六、您的权利</h2>
+  <p>您可随时编辑或删除任务、导出/导入备份、在系统中关闭相关权限、卸载应用删除本机数据，并可通过下文联系方式行使查阅、更正、删除等法定权利。因任务主要保存在本机，我们一般不持有您的云端任务副本。</p>
+
+  <h2>七、未成年人</h2>
+  <p>今办不以不满十四周岁的未成年人为目标用户。监护人如发现未成年人未经同意使用本应用，可通过联系方式告知我们。</p>
+
+  <h2>八、对外提供与转让</h2>
+  <p>我们不会出售您的任务内容。仅在征得同意、履行法定义务，或为完成您主动使用的语音/广告功能而由已披露的第三方处理必要技术信息时，才可能涉及共享或委托处理。运营者变更时将依法告知并要求承继方继续保护您的权益。</p>
+
+  <h2>九、政策更新</h2>
+  <p>我们可能更新本政策，并以更新日期标示。重大变更时可能通过应用更新说明或再次征求同意等方式提示。法律另有规定的除外。</p>
+
+  <h2>十、联系我们</h2>
+  <p>如有疑问、投诉或建议，请通过您下载今办的<strong>国内应用商店（如小米应用商店）开发者联系方式</strong>与我们沟通。</p>
+  <ul>
+    <li>产品：今办</li>
+    <li>包名：com.aibang.jinban</li>
+    <li>运营者：北京爱帮科技有限公司</li>
+  </ul>
+
+  <hr>
+
+  <h2>附录：个人信息收集清单（摘要）</h2>
+  <table>
+    <thead>
+      <tr><th>信息</th><th>场景</th><th>目的</th><th>是否必要</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>任务与设置（本地）</td><td>使用待办</td><td>核心功能</td><td>是</td></tr>
+      <tr><td>麦克风音频</td><td>语音输入</td><td>转写文字</td><td>否</td></tr>
+      <tr><td>设备/广告相关信息</td><td>展示广告</td><td>广告填充与统计</td><td>否</td></tr>
+      <tr><td>导出文件</td><td>导出备份</td><td>用户自助备份</td><td>否</td></tr>
+    </tbody>
+  </table>
+
+  <h2>附录：第三方 SDK 清单（摘要）</h2>
+  <table>
+    <thead>
+      <tr><th>名称</th><th>目的</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>百度语音相关组件</td><td>语音转文字</td></tr>
+      <tr><td>穿山甲广告 SDK</td><td>横幅广告</td></tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
